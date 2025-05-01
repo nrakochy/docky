@@ -31,8 +31,8 @@ const VARIABLES = [
 type OnChange = ChangeEventHandler<HTMLInputElement>;
 
 const Input = (props: { name: string, onChange: OnChange, value?: string }) => {
-    const { name, onChange } = props;
-    return <div style={{ flex: "1", display: "flex", gap: "8px", alignItems: "center" }}><label>{name}</label><input type="color" name={name} onChange={onChange} /></div>
+    const { name, onChange, value = "" } = props;
+    return <div style={{ flex: "1", display: "flex", gap: "8px", alignItems: "center" }}><label>{name}</label><input type="color" name={name} onChange={onChange} value={value} /></div>
 }
 
 const EditMe = (props: ThemeSetter) => {
