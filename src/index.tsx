@@ -106,9 +106,9 @@ function ThemeCode(props: ThemeCodeProps) {
     return (<div style={{ padding: "8px", display: "flex", flexDirection: "column", gap: "8px", overflow: "auto" }}>
         <section style={{ padding: "8px", display: "flex", flex: "1", gap: "8px", justifyContent: "space-between", alignItems: "center" }} >
             <h2 id="code">Code</h2>
-            <div>
+            <div style={{ display: "flex", gap: "2px" }}>
                 <ThemeSelector {...rest} />
-                {themeStr ? <button style={{ cursor: "pointer" }} disabled={clicked} onClick={onClick}>Copy</button> : null}
+                <button style={{ cursor: "pointer" }} disabled={clicked || !themeStr} onClick={onClick}>Copy</button>
             </div>
         </section>
         <code>
