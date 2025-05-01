@@ -15,3 +15,7 @@ Add theme handles to the existing example found [here](https://dockview.dev/temp
 4) :moneybag:
 
 
+#### A note about `load CSS` function
+
+The custom variable import must a hex value, cannot use a color name at the moment
+
